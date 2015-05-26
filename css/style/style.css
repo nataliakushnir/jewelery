@@ -228,9 +228,6 @@ hr {
 #gallery .button {
 	float: none;
 }
-#gallery .container {
-	display: table;
-}
 #reasons .columns {
 	float: left;
 	display: table;
