@@ -28,7 +28,7 @@ html, body {
 	font-family: 'Roboto Regular', arial;
 	font-size: 16px;
 	line-height: 1.5;
-	color: #878787;
+	color: #b7b7b7;
 }
 header {
     position: center;
@@ -76,7 +76,7 @@ h6 {
 	display: inline-block;
 	background-repeat: repeat-x;
 	height: 9px;
-	width: 67px;
+	width: 70px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -90,13 +90,18 @@ header .wrapper {
 	width: 100%;
 }
 .logo {
-	color: white;
-	text-transform: uppercase;
-	font-size: 24px;
+	
 	display: table-cell;
 	vertical-align: text-bottom;
 	width: 30%;
+	
+}
+.logo a{
+	color: white;
+	text-transform: uppercase;
+	font-size: 24px;
 	font-weight: bold;
+	text-decoration: none;
 }
 .menu {
 	vertical-align: text-bottom;
@@ -141,9 +146,9 @@ header h1 {
 	text-decoration: none;
 	color: white;
 	font-size: 16px;
-	padding: 20px 40px;
-	border-radius: 5px;
-	margin-right: 26px;
+	padding: 18px 38px;
+	border-radius: 3px;
+	margin-right: 20px;
 	border: 2px solid white;
 	line-height: 1;
 }
@@ -181,8 +186,9 @@ hr {
 	text-align: center;
 }
 #blocks .title h5 {
-	padding: 0 30%;
+	padding: 0 28%;
 	font-weight: normal;
+	color: #b7b7b7;
 }
 #blocks .block {
 	width: 30%;
@@ -191,6 +197,8 @@ hr {
 }
 #blocks .block h5 {
 	margin-bottom: 20px;
+
+	
 }
 #blocks .block:nth-of-type(3n+1) {
 	margin-right: 0;
@@ -206,8 +214,12 @@ hr {
 }
 .description_right {
 	display: table-cell;
-	width: 50%;
+	width: 48%;
 	vertical-align: middle;
+}
+.description_right h5{
+	color: #b7b7b7;
+	font-weight: normal;
 }
 #gallery .showcase {
 	display: table-cell;	
@@ -219,11 +231,12 @@ hr {
 	text-decoration: none;
 	color: white;
 	font-size: 16px;
-	padding: 20px 44px;
-	border-radius: 5px;
+	padding: 18px 38px;
+	border-radius: 3px;
 	margin-right: 0px;
 	background: #e92121; 
 	border: 1px solid #e92121;
+	margin-top: 60px;
 }
 #gallery .button {
 	float: none;
@@ -276,13 +289,15 @@ hr {
 }
 #showcase .separator, #blog .separator {
 	margin-bottom: 0;
+	margin-top: 40px;
 }
 .case_description {
 	margin-top: 30px;
 	-webkit-column-count: 2;
 	-moz-column-count: 2;
-	-webkit-column-gap: 40px;
-	-moz-column-gap: 40px;
+	-webkit-column-gap: 60px;
+	-moz-column-gap: 60px;
+	line-height: 2;
 }
 #comments .block {
 	margin-top: 80px;
@@ -306,8 +321,9 @@ hr {
 	text-align: center;
 }
 .title h5 {
-	padding: 0 30%;
+	padding: 0 29%;
 	font-weight: normal;
+	color: #b7b7b7;
 }
 #comments .fa {
 	font-size: 14px;
@@ -339,6 +355,9 @@ hr {
 /* Footer */
 footer {
 	background: #141414;
+}
+footer .logo a{
+	color: #474747;
 }
 footer .wrapper{
 	padding: 80px 0;
@@ -373,4 +392,7 @@ footer .menu a{
 	float: right;
 	text-align: right;
 	width: 22%;
+}
+#blocks .fa {
+    margin-top: 0px;
 }

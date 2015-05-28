@@ -30,12 +30,12 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	-moz-box-shadow: 0 0 5px #ccc;
-	-webkit-box-shadow: 0 0 5px #ccc;
+	-moz-box-shadow: 0 0 0px #ccc;
+	-webkit-box-shadow: 0 0 0px #ccc;
 	box-shadow: 0 0 0px #ccc;
-	border:  5px solid #faf9f9;
+	border:  5px solid #faf8f9;
 	left: -5px;
-	background: #faf9f9;
+	background: #faf8f9;
 	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
@@ -56,12 +56,13 @@
 
 .bx-wrapper .bx-loading {
 	min-height: 50px;
-	background: url(images/bx_loader.gif) center center no-repeat #faf9f9;
+	background: url(images/bx_loader.gif) center center no-repeat #fff;
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 2000;
 }
 
 /* PAGER */
@@ -77,15 +78,14 @@
 
 .bx-wrapper .bx-pager .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
-	display: inline-block;
+	display: none;
 	*zoom: 1;
 	*display: inline;
 }
-
 .bx-wrapper .bx-pager.bx-default-pager a {
 	background: #666;
 	text-indent: -9999px;
-	display: none;
+	display: block;
 	width: 10px;
 	height: 10px;
 	margin: 0 5px;
@@ -103,12 +103,12 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: -20%;
+	left: -60px;
 	background: url(images/controls.png) no-repeat -5px -5px;
 }
 
 .bx-wrapper .bx-next {
-	right: -20%;
+	right: -60px;
 	background: url(images/controls.png) no-repeat -5px -114px;
 }
 .bx-wrapper .bx-controls-direction a {
@@ -121,6 +121,7 @@
 	text-indent: -9999px;
 	z-index: 9999;
 }
+
 .bx-wrapper .bx-controls-direction a.disabled {
 	display: none;
 }
@@ -190,28 +191,4 @@
 	display: block;
 	font-size: .85em;
 	padding: 10px;
-}
-@media screen and (max-width: 1250px) {
-	.bx-wrapper .bx-prev {
-		left: -10%;
-	}
-	.bx-wrapper .bx-next {
-		right: -10%;
-	}
-}
-@media screen and (max-width: 1150px) {
-	.bx-wrapper .bx-prev {
-		left: -5%;
-	}
-	.bx-wrapper .bx-next {
-		right: -5%;
-	}
-}
-@media screen and (max-width: 1050px) {
-	.bx-wrapper .bx-prev {
-		left: 0%;
-	}
-	.bx-wrapper .bx-next {
-		right: 0%;
-	}
 }
